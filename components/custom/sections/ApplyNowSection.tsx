@@ -23,9 +23,10 @@ export default function ApplyNowSection() {
       <h2 className="apply-now__step">
         1. Click on the button below to fill out your employment application.
       </h2>
+      {/* TODO: Replace href with Conquest Electric employment application URL */}
       <a
         className="apply-now__btn"
-        href="#" {/* [TODO: Replace with Conquest Electric employment application URL] */}
+        href="#"
       >
         <ArrowIcon />
         Employment Application
