@@ -1,0 +1,291 @@
+/* ================================================================
+   SERVICES PAGE — styles/services.css
+   Source: https://carpenter-electric.com/services/ (post-81)
+   ================================================================ */
+
+/* ── Hero (giống about-us, cùng post-6348 template) ─────────────── */
+.services-hero {
+  position: relative;
+  background-color: var(--color-brand-dark-navy);
+  background-image: url("/images/AdobeStock_1759039566.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 230px 30px 130px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+.services-hero__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.services-hero__title {
+  font-family: var(--font-heading);
+  font-size: 68px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.1;
+  text-transform: capitalize;
+}
+
+/* ── Services Grid Section ─────────────────────────────────────────── */
+/* Container: elementor-element-e84f797
+   margin: 110px 0, padding: 0 30px, max-width: 1770px */
+.services-grid {
+  margin: 110px auto;
+  padding: 0 30px;
+  max-width: 1770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading widget: e64f76b — centered, max-width 814px, mb 60px */
+.services-grid__heading {
+  text-align: center;
+  max-width: 814px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.services-grid__subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-brand-primary);
+  border: 1px solid rgba(4, 49, 96, 0.18); /* #0431602E */
+  border-radius: 24px;
+  padding: 3px 15px;
+  margin-bottom: 16px;
+}
+
+.services-grid__subtitle-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-brand-primary);
+  flex-shrink: 0;
+}
+
+.services-grid__title {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 600;
+  color: var(--color-brand-dark-navy);
+  margin: 0;
+  line-height: 1.15;
+}
+
+/* Grid: 4 cols desktop, 3 laptop, 2 tablet, 1 mobile — gap 30px */
+.services-grid__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Service Card ─────────────────────────────────────────────────── */
+/* .service-block height: 525px (from post-81.css) */
+.service-block {
+  height: 525px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(4, 49, 96, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-block:hover {
+  box-shadow: 0 8px 32px rgba(4, 49, 96, 0.14);
+}
+
+/* Image area — fills top portion */
+.service-image {
+  margin: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.service-image img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.service-block:hover .service-image img {
+  transform: scale(1.04);
+}
+
+/* Caption — fills remaining height */
+.service-caption {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 25px 25px;
+}
+
+/* Content box */
+.service-content-box {
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Title — margin-top: -19px overlaps the image bottom */
+.service-loop-title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-brand-dark-navy);
+  margin: -19px 0 14px;
+  line-height: 1.25;
+  padding: 0;
+}
+
+.service-loop-title a {
+  color: var(--color-brand-dark-navy);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.service-loop-title a:hover {
+  color: var(--color-brand-primary);
+}
+
+/* Excerpt */
+.service-loop-exerpt {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #5a6571;
+  margin-bottom: 20px;
+}
+
+.service-loop-exerpt p {
+  margin: 0;
+}
+
+/* "More details" button — a.more-link pattern from theme-style.css */
+.service-button {
+  margin-top: auto;
+}
+
+.service-button a.more-link {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 14px 25px 14px 30px;
+  color: #fff;
+  background-color: var(--color-brand-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: background-color 0.4s ease, gap 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Arrow icon — right arrow → */
+.service-button a.more-link::after {
+  content: "→";
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.service-button a.more-link:hover {
+  background-color: #ff9d00;
+}
+
+.service-button a.more-link:hover::after {
+  transform: translateX(4px);
+}
+
+/* ── Responsive ─────────────────────────────────────────────────────── */
+
+/* ≤1366px: 3 columns */
+@media (max-width: 1366px) {
+  .services-grid {
+    margin: 100px auto;
+  }
+  .services-grid__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .service-loop-title {
+    font-size: 24px;
+  }
+}
+
+/* ≤1200px: 2 columns */
+@media (max-width: 1200px) {
+  .services-grid__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ≤1024px: 2 columns, smaller margins & heading */
+@media (max-width: 1024px) {
+  .services-hero {
+    padding: 180px 30px 80px;
+  }
+  .services-hero__title {
+    font-size: 48px;
+  }
+  .services-grid {
+    margin: 80px auto;
+  }
+  .services-grid__heading {
+    margin-bottom: 40px;
+  }
+  .services-grid__title {
+    font-size: 42px;
+  }
+  .services-grid__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ≤767px: 1 column, mobile spacing */
+@media (max-width: 767px) {
+  .services-hero {
+    padding: 150px 15px 60px;
+  }
+  .services-hero__title {
+    font-size: 36px;
+  }
+  .services-grid {
+    margin: 60px auto;
+    padding: 0 15px;
+  }
+  .services-grid__heading {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .services-grid__title {
+    font-size: 30px;
+  }
+  .services-grid__list {
+    grid-template-columns: 1fr;
+  }
+}

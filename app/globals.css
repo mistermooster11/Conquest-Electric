@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+/* caren-icon icon font */
+@font-face {
+  font-family: "caren-icon";
+  src: url("/fonts/caren-icon.woff2") format("woff2"),
+       url("/fonts/caren-icon.woff") format("woff"),
+       url("/fonts/caren-icon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.caren-icon {
+  font-family: "caren-icon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.caren-icon-arrow-right:before {
+  content: "\e06e";
+}
+
+.caren-icon-arrow-left:before {
+  content: "\e06d";
+}
+
+@theme inline {
+  /* Brand Colors */
+  --color-brand-primary: #509C35;
+  --color-brand-secondary: #224A24;
+  --color-brand-accent: #7DB669;
+  --color-brand-light: #A4A4A4;
+  --color-brand-dark-navy: #043160;
+
+  /* Text Colors */
+  --color-text-body: #5A6571;
+  --color-text-dark: #191B16;
+  --color-text-muted: #A4A4A4;
+
+  /* BG Colors */
+  --color-bg-page: #F1F6F8;
+  --color-bg-light: #E8EDEF;
+  --color-bg-border: #D8DADF;
+
+  /* Utilities */
+  --color-border-default: #E3E5E8;
+
+  /* Fonts */
+  --font-heading: "Funnel Display", sans-serif;
+  --font-body: "Funnel Display", sans-serif;
+
+  /* Container */
+  --container-max: 1410px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-page);
+  color: var(--color-text-body);
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ── Shared NavArrows component ── */
+.nav-arrows {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+  color: var(--color-brand-secondary, #224A24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
+}
+
+.nav-arrow i {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.nav-arrow:hover {
+  background: var(--color-brand-primary, #509C35);
+  color: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(80, 156, 53, 0.25);
+}
+
+/* Disabled state (Swiper adds this class) */
+.nav-arrow.swiper-button-disabled {
+  opacity: 0.35;
+  pointer-events: none;
+}
