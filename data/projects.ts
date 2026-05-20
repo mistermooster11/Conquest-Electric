@@ -12,42 +12,42 @@ export const projects: Project[] = [
     title: "Brownstone Electrical Troubleshooting",
     location: "Manhattan, New York",
     href: "#",
-    image: "/images/lopo1-1.jpg", // [TODO: Replace with Conquest Electric project photo]
+    image: "/images/conquest-electric/IMG_5027-1.jpg",
   },
   {
     id: "apartment-lighting",
     title: "Apartment Lighting & Switch Installation",
     location: "Manhattan, New York",
     href: "#",
-    image: "/images/lopo2.jpg", // [TODO: Replace with Conquest Electric project photo]
+    image: "/images/conquest-electric/Group-63-scaled.jpg",
   },
   {
     id: "ev-charger-building",
     title: "EV Charger Building Installation",
     location: "New York City, NY",
     href: "#",
-    image: "/images/lopo3.jpg", // [TODO: Replace with Conquest Electric project photo]
+    image: "/images/conquest-electric/electric-car.jpg",
   },
   {
     id: "commercial-buildout",
     title: "Commercial Electrical Build-Out",
     location: "Manhattan, New York",
     href: "#",
-    image: "/images/lopo4.jpg", // [TODO: Replace with Conquest Electric project photo]
+    image: "/images/conquest-electric/Group-76.jpg",
   },
   {
     id: "panel-upgrade",
     title: "Electrical Panel Upgrade",
     location: "New Jersey",
     href: "#",
-    image: "/images/lopo5.jpg", // [TODO: Replace with Conquest Electric project photo]
+    image: "/images/conquest-electric/Rectangle-45-scaled.jpg",
   },
   {
     id: "outdoor-lighting",
     title: "Outdoor Lighting Installation",
     location: "New York City, NY",
     href: "#",
-    image: "/images/lopo6.jpg", // [TODO: Replace with Conquest Electric project photo]
+    image: "/images/conquest-electric/Group-66.jpg",
   },
 ];
 

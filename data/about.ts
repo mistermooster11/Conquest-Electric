@@ -31,7 +31,7 @@ export const aboutMissionData = {
     "Repairs, troubleshooting, and emergency service.",
     "EV charger installation for homes and buildings.",
   ],
-  mainImage: "/images/AdobeStock_656843423.jpg",
+  mainImage: "/images/conquest-electric/Frame-50.png",
   decoImage3: "/images/about-deco-3.png",
   decoCircle: "/images/about-deco.png",
   bannerDeco: "/images/about-baner-3.png",
@@ -72,8 +72,8 @@ export const aboutTalentsData = {
   ],
   ctaLabel: "Get Started",
   ctaHref: "/contact-us",
-  image1: "/images/AdobeStock_748806367-scaled.jpg",
-  image2: "/images/AdobeStock_1221924313.jpg",
+  image1: "/images/conquest-electric/Group-66.jpg",
+  image2: "/images/conquest-electric/Rectangle-45-scaled.jpg",
   decoImage: "/images/about-deco.png",
 };
 
@@ -82,11 +82,11 @@ export const aboutTestimonialsData = {
   heading: "Here's What our clients say",
   rating: "5.0",
   avatars: [
-    "/images/testimo-avatar-4.jpg",
-    "/images/testimo-avatar-5.jpg",
-    "/images/testimo-avatar-6.jpg",
+    "/images/conquest-electric/Chaim-Ehrlich-500x380.png",
+    "/images/conquest-electric/mike-500x380.png",
+    "/images/conquest-electric/Sureiny-Fermin-500x380.png",
   ],
-  sideImage: "/images/AdobeStock_456035122.webp",
+  sideImage: "/images/conquest-electric/Group-69.jpg",
   bgDeco: "/images/tes-bg-1.png",
   testimonials: [
     {
@@ -108,22 +108,22 @@ export const aboutTestimonialsData = {
   googleReviews: [
     {
       name: "Sureiny F.",
-      avatar: "/images/testimo-avatar-4.jpg",
+      avatar: "/images/conquest-electric/Sureiny-Fermin-500x380.png",
       text: "I had base lamps that needed to be installed and switches that needed to be replaced in two apartments for a production company. The response time to emails and calls was very quick and the electrician who completed the work was very efficient and friendly. He definitely found the right solutions to my problem. Very pleased!",
     },
     {
       name: "Chaim E.",
-      avatar: "/images/testimo-avatar-5.jpg",
+      avatar: "/images/conquest-electric/Chaim-Ehrlich-500x380.png",
       text: "I called up Conquest Electric with quite an obscure question about the voltage of my waffle maker and I received fantastic advice, spot on, short, sweet and to the point. Thank you Roman! Highly recommended.",
     },
     {
       name: "Mike G.",
-      avatar: "/images/testimo-avatar-6.jpg",
+      avatar: "/images/conquest-electric/mike-500x380.png",
       text: "Roman was incredible helping me trouble shoot the electrical issues that surfaced out of nowhere in my landmarked brownstone. He was fast, on time, and funny. Highly recommend him and the team at Conquest Electric!",
     },
     {
       name: "Vivien C.",
-      avatar: "/images/testimo-avatar-4.jpg",
+      avatar: "/images/conquest-electric/Vivien-C.-500x380.png",
       text: "We had a great experience with Conquest Electric. Roman was able to quickly diagnose and fix our problem on the same day that we called him. The pricing was exactly as discussed with no hidden fees. I would definitely recommend Conquest Electric and Roman to anyone in the area.",
     },
   ],

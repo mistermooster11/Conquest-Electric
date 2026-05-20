@@ -26,9 +26,9 @@ export const testimonialsSectionContent = {
   heading: "Here's what New Yorkers say about us",
   rating: "5.0",
   avatars: [
-    "/images/testimo-avatar-4.jpg",
-    "/images/testimo-avatar-5.jpg",
-    "/images/testimo-avatar-6.jpg",
+    "/images/conquest-electric/Chaim-Ehrlich-500x380.png",
+    "/images/conquest-electric/mike-500x380.png",
+    "/images/conquest-electric/Sureiny-Fermin-500x380.png",
   ],
-  sideImage: "/images/AdobeStock_913726797-e1774388913262.jpg",
+  sideImage: "/images/conquest-electric/Group-69.jpg",
 };
