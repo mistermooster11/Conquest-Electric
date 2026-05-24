@@ -1,123 +1,265 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-/* caren-icon icon font */
+@custom-variant dark (&:is(.dark *));
+
+/* =========================================
+   FONT FACE — Manrope self-hosted
+   ========================================= */
 @font-face {
-  font-family: "caren-icon";
-  src: url("/fonts/caren-icon.woff2") format("woff2"),
-       url("/fonts/caren-icon.woff") format("woff"),
-       url("/fonts/caren-icon.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
-
-.caren-icon {
-  font-family: "caren-icon" !important;
-  speak: never;
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
-.caren-icon-arrow-right:before {
-  content: "\e06e";
-}
-
-.caren-icon-arrow-left:before {
-  content: "\e06d";
-}
-
-@theme inline {
+/* =========================================
+   BRAND TOKENS — conquestelectric.com
+   ========================================= */
+:root {
   /* Brand Colors */
-  --color-brand-primary: #509C35;
-  --color-brand-secondary: #224A24;
-  --color-brand-accent: #7DB669;
-  --color-brand-light: #A4A4A4;
-  --color-brand-dark-navy: #043160;
+  --color-primary: #EEF3F7;        /* light blue-gray bg */
+  --color-secondary: #000000;      /* black */
+  --color-text: #4A5257;           /* body text */
+  --color-accent: #F14714;         /* orange-red CTA */
+  --color-white: #FFFFFF;
+  --color-dark: #121C22;           /* dark navy */
+  --color-dark-2: #1F2428;         /* slightly lighter dark */
+  --color-light-gray: #C5D0D7;
+  --color-red-light: #E86556;      /* pricing checkmark color */
+  --color-bg-light: #FAFAFA;
 
-  /* Text Colors */
-  --color-text-body: #5A6571;
-  --color-text-dark: #191B16;
-  --color-text-muted: #A4A4A4;
+  /* Typography */
+  --font-body: "Manrope", sans-serif;
 
-  /* BG Colors */
-  --color-bg-page: #F1F6F8;
-  --color-bg-light: #E8EDEF;
-  --color-bg-border: #D8DADF;
-
-  /* Utilities */
-  --color-border-default: #E3E5E8;
-
-  /* Fonts */
-  --font-heading: "Funnel Display", sans-serif;
-  --font-body: "Funnel Display", sans-serif;
-
-  /* Container */
-  --container-max: 1410px;
+  /* Layout */
+  --container-max: 1340px;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
-* {
+/* =========================================
+   RESET & BASE
+   ========================================= */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-bg-page);
-  color: var(--color-text-body);
+  color: var(--color-text);
+  background-color: var(--color-white);
   margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* ── Shared NavArrows component ── */
-.nav-arrows {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.nav-arrow {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: none;
-  background: #fff;
-  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
-  color: var(--color-brand-secondary, #224A24);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  flex-shrink: 0;
+/* =========================================
+   UTILITY CLASSES
+   ========================================= */
+.container {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.nav-arrow i {
-  font-size: 14px;
-  line-height: 1;
+/* =========================================
+   KEYFRAME ANIMATIONS
+   ========================================= */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-.nav-arrow:hover {
-  background: var(--color-brand-primary, #509C35);
-  color: #fff;
-  box-shadow: 0px 4px 12px 0px rgba(80, 156, 53, 0.25);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Disabled state (Swiper adds this class) */
-.nav-arrow.swiper-button-disabled {
-  opacity: 0.35;
-  pointer-events: none;
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
 }

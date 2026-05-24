@@ -1,5 +1,5 @@
 /**
- * color-mapper-appscript.js — QuickFlip Sites / PipeMonkey Color Mapper
+ * color-mapper-appscript.js — QuickFlip Sites Color Mapper
  *
  * One-time setup in Google Sheets:
  *   Extensions → Apps Script → paste this entire file → Cmd+S

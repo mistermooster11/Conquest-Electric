@@ -1,28 +1,31 @@
-import HeroSection from "@/components/custom/sections/HeroSection";
-import AboutSection from "@/components/custom/sections/AboutSection";
-import ServicesSection from "@/components/custom/sections/ServicesSection";
-import ProcessSection from "@/components/custom/sections/ProcessSection";
-import WhatWeDoSection from "@/components/custom/sections/WhatWeDoSection";
-import ProjectsSection from "@/components/custom/sections/ProjectsSection";
-import SinceSection from "@/components/custom/sections/SinceSection";
-import TestimonialsSection from "@/components/custom/sections/TestimonialsSection";
-import WorkWithUsSection from "@/components/custom/sections/WorkWithUsSection";
-import StatsSection from "@/components/custom/sections/StatsSection";
-import FAQSection from "@/components/custom/sections/FAQSection";
-import BlogSection from "@/components/custom/sections/BlogSection";
+import "@/styles/homepage.css";
+import HeroSection from "@/components/custom/hero/HeroSection";
+import MarqueeTicker from "@/components/custom/ticker/MarqueeTicker";
+import TrustedLogos from "@/components/custom/trusted/TrustedLogos";
+import AboutSection from "@/components/custom/about/AboutSection";
+import ServicesSection from "@/components/custom/services/ServicesSection";
+import PricingSection from "@/components/custom/pricing/PricingSection";
+import CTAFormSection from "@/components/custom/cta/CTAFormSection";
+import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";
+import NeedServicesSection from "@/components/custom/need-services/NeedServicesSection";
+import FAQSection from "@/components/custom/faq/FAQSection";
+import BlogSection from "@/components/custom/blog/BlogSection";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <>
-      <HeroSection />
+      <div className="above-fold">
+        <HeroSection />
+        <MarqueeTicker />
+      </div>
+      <TrustedLogos />
       <AboutSection />
-      <ServicesSection />
-      <ProcessSection />
-      <WhatWeDoSection />
-      <ProjectsSection />
-      <SinceSection />
+      <PricingSection />
+      <CTAFormSection />
       <TestimonialsSection />
-      {/* <WorkWithUsSection /> */}
+      <NeedServicesSection />
+      <FAQSection />
+      <BlogSection />
     </>
   );
 }

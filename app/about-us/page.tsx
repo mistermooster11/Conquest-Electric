@@ -1,25 +1,35 @@
-import React from "react";
-import AboutHeroSection from "@/components/custom/sections/AboutHeroSection";
-import AboutMissionSection from "@/components/custom/sections/AboutMissionSection";
-import AboutStatsSection from "@/components/custom/sections/AboutStatsSection";
-import AboutTalentsSection from "@/components/custom/sections/AboutTalentsSection";
-import AboutTestimonialsSection from "@/components/custom/sections/AboutTestimonialsSection";
-import "@/styles/about.css";
+import type { Metadata } from "next";
+import "@/styles/homepage.css";
+import "@/styles/inner-pages.css";
+import PageHeroSection from "@/components/custom/page-hero/PageHeroSection";
+import AboutSection from "@/components/custom/about/AboutSection";
+import WhyChooseSection from "@/components/custom/why-choose/WhyChooseSection";
+import FleetSection from "@/components/custom/fleet/FleetSection";
+import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";
+import CTAFormSection from "@/components/custom/cta/CTAFormSection";
 
-export const metadata = {
-  title: "About Us | Conquest Electric",
+export const metadata: Metadata = {
+  title: "About Us — Conquest Electric | Licensed Electricians NYC & NJ",
   description:
-    "Learn about Conquest Electric — Manhattan's 5-star electrical contractor serving NYC and New Jersey. Our mission, values, and why clients choose us.",
+    "Learn about Conquest Electric's mission, team, and values. A 5-star licensed electrical contractor serving Manhattan, New York City, and New Jersey.",
 };
 
-export default function AboutUsPage() {
+export default function AboutPage() {
   return (
     <>
-      <AboutHeroSection />
-      <AboutMissionSection />
-      <AboutStatsSection />
-      <AboutTalentsSection />
-      <AboutTestimonialsSection />
+      <PageHeroSection
+        title="About Us"
+        subtitle="5-star licensed electrical contractor serving Manhattan, New York City, and New Jersey."
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "About Us" },
+        ]}
+      />
+      <AboutSection />
+      <WhyChooseSection />
+      <FleetSection />
+      <TestimonialsSection />
+      <CTAFormSection />
     </>
   );
 }
