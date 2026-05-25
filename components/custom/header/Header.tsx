@@ -66,7 +66,7 @@ export default function Header() {
         <div className="header__logo">
           <Link href="/">
             <Image
-              src="/images/conquest-electric/Google-01-Converted.png"
+              src="/logos/logo-light-background.png"
               alt="Conquest Electric"
               width={200}
               height={44}

@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="footer__brand">
           <Link href="/">
             <Image
-              src="/images/conquest-electric/Google-01-Converted.png"
+              src="/logos/logo-dark-background.svg"
               alt="Conquest Electric"
               width={239}
               height={58}

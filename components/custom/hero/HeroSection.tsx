@@ -51,17 +51,25 @@ export default function HeroSection() {
 
   return (
     <section className="hero">
-      {/* Video background */}
+      {/* Cloudflare Stream video background */}
       <div className="hero__video-bg">
-        <video
-          autoPlay
-          muted
-          playsInline
-          loop
-          poster="/images/electrician-examining-circuit-breaker-panel.jpg"
+        <iframe
+          src="https://customer-ip9lnkk65px0t3ak.cloudflarestream.com/31ac721acdb1893f8d5e09ae146b21b6/iframe?autoplay=true&muted=true&loop=true&controls=false&playsinline=true"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            width: "177.78vh",
+            height: "56.25vw",
+            minWidth: "100%",
+            minHeight: "100%",
+            transform: "translate(-50%, -50%)",
+            border: "none",
+            pointerEvents: "none",
+          }}
+          allow="autoplay; fullscreen"
           aria-hidden="true"
-        >
-        </video>
+        />
       </div>
 
       {/* Content */}
