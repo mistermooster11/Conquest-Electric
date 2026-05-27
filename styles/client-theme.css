@@ -55,13 +55,17 @@
 
 /* Contact section — map background with white overlay */
 .contact-section {
-  background-image: url("/wp-assets/map-1.png");
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-image: url("/wp-assets/map-1.png") !important;
+  background-color: #ffffff !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
 }
 
 .contact-section::before {
-  background-color: rgba(255, 255, 255, 0.82);
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  z-index: 0 !important;
 }
