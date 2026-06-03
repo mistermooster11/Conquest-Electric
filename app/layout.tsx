@@ -104,7 +104,7 @@ export default function RootLayout({
       </head>
       <body>
         <PageTransition />
-        <SalePopup businessName="Conquest Electric" expiryDate="June 7, 2026" trade="electricians" />
+        <SalePopup businessName="Conquest Electric" expiryDate="June 15, 2026" trade="electricians" />
         <Header />
         <main>{children}</main>
         <Footer />
