@@ -5,10 +5,9 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        // TODO: Change disallow to allow when moving to production domain
-        disallow: "/",
+        allow: "/",
       },
     ],
-    sitemap: "https://[TODO: production-domain]/sitemap.xml",
+    sitemap: "https://conquestelectric.com/sitemap.xml",
   };
 }

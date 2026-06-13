@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Conquest Electric is a 5-star electrical contractor serving Manhattan, New York City, and New Jersey — residential, commercial, EV charging, and more. Call 212-301-6225.",
     images: [
       {
-        url: "/images/conquest-electric/Google-01-Converted.png",
+        url: "/logos/logo-light-background.png",
         width: 1200,
         height: 630,
         alt: "Conquest Electric — Licensed Electricians NYC",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Conquest Electric — Licensed Electricians | Manhattan, NYC & NJ",
     description:
       "Conquest Electric is a 5-star electrical contractor serving Manhattan, New York City, and New Jersey — residential, commercial, EV charging, and more.",
-    images: ["/images/conquest-electric/Google-01-Converted.png"],
+    images: ["/logos/logo-light-background.png"],
   },
 };
 
@@ -48,7 +48,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "Electrician",
   name: "Conquest Electric",
-  image: "https://conquestelectric.com/images/conquest-electric/Google-01-Converted.png",
+  image: "https://conquestelectric.com/logos/logo-light-background.png",
   url: "https://conquestelectric.com",
   telephone: "+1-212-301-6225",
   email: "service@conquestelectric.com",

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://[TODO: production-domain]";
+const BASE = "https://conquestelectric.com";
 
 const serviceSlugs = [
   "panel-upgrade",
