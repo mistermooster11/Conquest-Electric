@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 70" width="260" height="70">
+  <text x="130" y="26" font-family="Georgia, serif" font-size="18" font-weight="400" letter-spacing="5" fill="#1a1a1a" text-anchor="middle">GRAMERCY</text>
+  <text x="130" y="46" font-family="Georgia, serif" font-size="14" font-weight="400" letter-spacing="5" fill="#4a4a4a" text-anchor="middle">TAVERN</text>
+  <line x1="20" y1="55" x2="240" y2="55" stroke="#1a1a1a" stroke-width="0.5"/>
+</svg>

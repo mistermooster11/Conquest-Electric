@@ -43,34 +43,34 @@ export default function TrustedLogos() {
     <section className="trusted" ref={sectionRef}>
       <div className="trusted__inner">
         <h2 className="trusted__heading">
-          Trusted by Miami&rsquo;s Top Restaurants &amp; Properties
+          Trusted by New York&rsquo;s Top Restaurants &amp; Properties
         </h2>
         <div className="trusted__logos">
           <div className="trusted__logo-item">
             <Image
-              src="/images/logos-restaurante-2.png"
-              alt="Restaurant Logo"
-              width={138}
-              height={80}
-              style={{ height: "60px", width: "auto" }}
+              src="/images/logo-nobu.svg"
+              alt="Nobu New York"
+              width={200}
+              height={70}
+              style={{ height: "55px", width: "auto" }}
             />
           </div>
           <div className="trusted__logo-item">
             <Image
-              src="/images/logo-joia-beach.png"
-              alt="Joia Beach Logo"
-              width={265}
-              height={80}
-              style={{ height: "60px", width: "auto" }}
+              src="/images/logo-le-bernardin.svg"
+              alt="Le Bernardin"
+              width={240}
+              height={70}
+              style={{ height: "55px", width: "auto" }}
             />
           </div>
           <div className="trusted__logo-item">
             <Image
-              src="/images/logos-restaurante-1.png"
-              alt="Restaurant Logo"
-              width={118}
-              height={78}
-              style={{ height: "60px", width: "auto" }}
+              src="/images/logo-gramercy.svg"
+              alt="Gramercy Tavern"
+              width={260}
+              height={70}
+              style={{ height: "55px", width: "auto" }}
             />
           </div>
         </div>

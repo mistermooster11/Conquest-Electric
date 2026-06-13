@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 70" width="240" height="70">
+  <text x="120" y="26" font-family="Georgia, serif" font-size="11" font-weight="400" letter-spacing="5" fill="#4a4a4a" text-anchor="middle">LE</text>
+  <text x="120" y="48" font-family="Georgia, serif" font-size="22" font-weight="400" letter-spacing="6" fill="#1a1a1a" text-anchor="middle">BERNARDIN</text>
+  <line x1="20" y1="55" x2="220" y2="55" stroke="#1a1a1a" stroke-width="0.5"/>
+</svg>
